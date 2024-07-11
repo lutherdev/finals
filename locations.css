@@ -1,0 +1,83 @@
+
+
+.container {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    height: 100%;
+}
+
+.store-card {
+    width: 300px;
+    background-color: rgb(192, 56, 255);
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: all 0.8s ease;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.store-card:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.store-details {
+    padding: 20px;
+}
+
+.store-details h2 {
+    color: #fff45a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.store-details p {
+    color: #76fff4;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.store-details a {
+    color: #6eff73;
+    text-decoration: none;
+}
+
+.store-details a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top: 1px solid #dddddd; 
+    
+}
+
+.map{
+    float: left;
+    width: 50%;
+    height: auto;
+    border: 2px solid rgb(192, 56, 255);
+    border-radius: 50px;
+    
+}
+
+.map iframe{
+    width: 100%;
+    height: 1000px;
+    border-radius: 50px;
+}
+
+.map h1{
+    text-align: center;
+    color:rgb(192, 56, 255);
+}
+
+.main-div{
+    padding-right: 50px;
+}

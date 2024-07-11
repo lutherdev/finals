@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: image("manyd.png");
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 15px 15px 10px 10px rgba(236, 52, 212, 0.8);
+    padding-bottom: 3%;
+    transition: 0.6s ease;
+}
+
+.container:hover{
+    box-shadow: 15px 15px 10px 10px #ec3b70;
+}
+h1 {
+    color: #ff75e1;
+    text-align: center;
+}
+.section, .section2 {
+    margin-bottom: 20px;
+}
+.section h2, .section2 h2 {
+    color: #6e4de4;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.section p, .section2 p{
+    color: #e44ddc;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-methods a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c062e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.contact-methods a:hover {
+    background-color: #ec3b70;
+}

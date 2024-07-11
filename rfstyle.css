@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --clr: #0ab3ff;
+}
+
+
+form{
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+    padding-bottom: 11%;
+}
+
+form h2{
+    color: var(--clr);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+    padding-left: 5%;
+}
+
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--clr);
+    outline: none;
+    color: #b03fe4;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.inputBox label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+
+.inputBox label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus, .inputBox input:valid{
+    border-bottom: 2px solid rgb(216, 87, 228);
+}
+
+.inputBox input:focus ~ label span, .inputBox input:valid ~ label span{
+    color: rgb(216, 87, 228);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+
+
+.inputBox input[type="submit"]{
+    background: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2530;
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.inputBox input[type="submit"]:hover{
+    background: rgb(216, 87, 228);
+    color: #1c2530;
+}
+form p{
+    color: #fff;
+    
+}
+
+form p a{
+    color: var(--clr);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 15px 15px 10px 10px var(--clr);
+    padding-bottom: 10%;
+    transition: 0.6s ease;
+}
+
+.container:hover{
+    transition: 0.6s ease;
+    box-shadow: 15px 15px 10px 10px rgb(216, 87, 228);
+}

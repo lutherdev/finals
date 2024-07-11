@@ -1,0 +1,72 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.store-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensures the map iframe does not overflow */
+}
+
+.store-card:hover {
+    transform: translateY(-5px);
+}
+
+.store-details {
+    padding: 20px;
+}
+
+.store-details h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.store-details p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.store-details a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.store-details a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top: 1px solid #dddddd; /* Optional: Divider line between details and map */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

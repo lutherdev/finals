@@ -1,0 +1,49 @@
+#man {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+    
+.mem{
+    position: relative;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    padding-left: 10px;
+    }
+
+.mem img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(255, 56, 122);
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px -2px rgba(255, 56, 122, 0.5);
+    }
+
+.mem p{
+    color: rgb(255, 56, 56);
+    font-size: large;
+    font-weight: bolder;
+}
+
+#vision{
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    height: 500px;
+    
+}
+
+#mission{
+    overflow: hidden;
+    float: right;
+    width: 50%;
+    height: 500px;
+}
+
+.main-div{
+    padding-bottom: 550px;
+}
+
